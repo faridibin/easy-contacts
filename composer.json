@@ -1,0 +1,14 @@
+{
+    "name": "faridibin/easy-forms",
+    "description": "An elegant contact form package for the Laravel framework.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Farid Adam",
+            "email": "faridibin@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
