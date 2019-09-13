@@ -30,6 +30,6 @@ class ContactMailable extends Mailable
      */
     public function build()
     {
-        return $this->markdown('contact.email')->with(['mail' => $this->mail]);
+        return $this->markdown('easy-forms::contact.email')->with(['mail' => $this->mail]);
     }
 }
