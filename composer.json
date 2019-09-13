@@ -13,5 +13,12 @@
         "psr-4": {
             "Faridibin\\EasyForms\\": "src/"
         }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Faridibin\\EasyForms\\EasyFormsServiceProvider"
+            ]
+        }
     }
 }
