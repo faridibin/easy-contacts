@@ -1,7 +1,12 @@
 @component('mail::message')
-# Introduction
+# Hello Administrator
 
-The body of your message.
+You have a new mssage from {{ $mail['name'] }} <{{ $mail['email'] }}>
+
+@if (1)
+
+@endif
+
 
 @component('mail::button', ['url' => ''])
 View Message
