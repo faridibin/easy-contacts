@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ config('form.name', 'Contact') }}</div>
+                <div class="card-header">{{ config('easy-forms.form_name', 'Contact') }}</div>
 
                 <div class="card-body">
                     @if (session('sent'))
