@@ -29,7 +29,7 @@ class EasyFormsController extends Controller
     {
         $contacted = Contact::create($request->all());
 
-        Mail::to('faridibin@gmail.com')->send(new ContactMailable($request->all())); //custom mail
+        Mail::to(config('easy-forms.mail_to'))->send(new ContactMailable($request->all())); //custom mail
 
         return redirect()->route('contact.index')->with('sent', 'Message Sent!'); //custom message
 
