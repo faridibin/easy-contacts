@@ -17,13 +17,13 @@ class EasyFormsServiceProvider extends ServiceProvider
         $this->loadMigrationsFrom(__DIR__.'/database/migrations');
         $this->loadViewsFrom(__DIR__.'/resources/views', 'easy-forms');
 
-        // $this->publishes([
-        //     __DIR__.'/path/to/config/courier.php' => config_path('courier.php'),
-        // ], 'config');
+        $this->publishes([
+            __DIR__.'/config/easy-forms.php' => config_path('easy-forms.php'),
+        ], 'easy-forms-config');
 
-        // $this->publishes([
-        //     __DIR__.'/../database/migrations/' => database_path('migrations')
-        // ], 'migrations');
+        $this->publishes([
+            __DIR__.'/../database/migrations/' => database_path('migrations')
+        ], 'easy-forms-migrations');
     }
 
     /**
@@ -33,8 +33,8 @@ class EasyFormsServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        // $this->mergeConfigFrom(
-        //     __DIR__.'/path/to/config/courier.php', 'courier'
-        // );
+        $this->mergeConfigFrom(
+            __DIR__.'/config/easy-forms.php', 'easy-forms'
+        );
     }
 }
